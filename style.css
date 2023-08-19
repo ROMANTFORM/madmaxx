@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+body{
+    background-color: black;
+}
+
+/* ---------------------------------- HEADER -------------------------------- */
+.header {
+    padding: 250px 160px 0 160px;
+    background-image: url(./images/background.png);
+    background-size: 80%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.title-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    display: block;
+    width: 150px;
+    height: 134px;
+    background-image: url(./images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header-title {
+    color: #f1f1f1;
+    font-size: 127.158px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 167.314px;
+}
+.header-title__span {
+    color: #6B50F6;
+    font-size: 127.158px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 167.314px;
+}
+.header-title__text {
+}
+.picture-block {
+}
+/* ---------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
