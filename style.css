@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Red Hat Text', sans-serif;
-    font-size: 30px;
+    
 }
 body{
     background-color: black;
     color: #f1f1f1;
+    font-size: 30px;
 }
 
 ul, ol, nav{
@@ -87,8 +88,8 @@ ul, ol, nav{
 .main-section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 30px;
-    gap: 50px;
+    padding: 40px;
+    gap: 40px;
 }
 .block{
    /* width: 22%; */
@@ -148,8 +149,8 @@ background-image: url(./images/Union.png);
 
 /* ------------------------------ Highlights ---------------------------------- */
 .highlights-block{
-grid-column: 1;
-grid-row: 1 / 10;
+    grid-column: 1;
+    grid-row: 1 / 10;
 }
 .highlights-list {
     margin-bottom: 60px;
@@ -168,7 +169,7 @@ grid-row: 1 / 10;
     margin: 35px 0 30px 0;
 }
 .highlight-subitem{
-    font-size: 34%;
+    font-size: 46%;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -249,10 +250,10 @@ grid-row: 1 / 10;
 /* ------------------------------- Introduction ------------------------------ */
 .introduction-block {
     grid-column: 3/4;
-grid-row: 1 / 6;
+    grid-row: 1 / 6;
 }
 .intoduction-text{
-    font-size: 40%;
+    font-size: 52%;
     margin-bottom: 18px;
 }
 
@@ -260,7 +261,7 @@ grid-row: 1 / 6;
 /* ------------------------------- Features ---------------------------------- */
 .features-block {
     grid-column: 3/4;
-grid-row: 6 / 10;
+    grid-row: 6 / 10;
 }
 
 
@@ -296,7 +297,7 @@ grid-row: 6 / 10;
 /* -------------------------------- How to Use ------------------------------- */
 .use-block{
     grid-column: 4/6;
-grid-row: 2 / 7;
+    grid-row: 2 / 7;
 }
 .use-block--link{
     color: #6B50F6;
@@ -307,7 +308,7 @@ grid-row: 2 / 7;
 /* -------------------------------- Example --------------------------------- */
 .example-block {
     grid-column: 4/6;
-grid-row: 7 / 10;
+    grid-row: 7 / 10;
     
 }
 .example-block__img{
@@ -317,9 +318,136 @@ grid-row: 7 / 10;
 
 
 
+/* ----------------------------------------- ADAPTIVE ----------------------- */
+
+@media (max-width: 1200px) {
+
+    .header-subtitle{
+        font-size: 26px;
+    }
+    .header-logo{
+        width: 100px;
+        margin-right: 28px;
+    }
+    .header-title{
+        font-size: 66px;
+    }
+    .header-title span{
+        font-size: 66px;
+    }
+    .header-title-descr{
+        font-size: 32px;
+    }
+
+    .main-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlights-block{
+        grid-column: 1;
+        grid-row: 1/10;
+    }
+    .license-block{
+        grid-column: 2;
+        grid-row: 1/5;
+    }
+    .name-block{
+        grid-column: 2;
+        grid-row: 5/7;
+    }
+    .attention-block{
+        grid-column: 2;
+        grid-row: 7/12;
+    }
+    .introduction-block{
+        grid-column: 1;
+        grid-row: 10/16;
+    }
+    .features-block{
+        grid-column: 1;
+        grid-row: 16/20;
+    }
+    .statistic-block{
+        grid-column: 2;
+        grid-row: 12/14;
+    }
+    .use-block{
+        grid-column: 2;
+        grid-row: 14/17;
+    }
+    .example-block{
+        grid-column: 2;
+        grid-row: 17/20;
+    }
+}
 
 
+@media (max-width: 710px) {
+    .header-logo{
+        width: 70px;
+        height: 70px;
+    }
+    .header-title{
+        font-size: 54px;
+    }
+    .header-title span{
+        font-size: 54px;
+    }
+    .header-subtitle{
+        font-size: 20px;
+    }
+    .header-title-descr{
+        font-size: 20px;
+    }
+    .block-title{
+        font-size: 85%;
+    }
+    .name-title-wrap{
+        flex-direction: column;
+    }
+    .attention-container{
+        flex-direction: column;
+    }
+    .attention-text{
+        margin-bottom: 20px;
+    }
+}
 
-
+@media (max-width: 640px) {
+    .header-subtitle, .header-title-descr{
+        font-size: 16px;
+    }
+    .header-title-wrap{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .header-logo{
+        width: 50px;
+        height: 50px;
+    }
+    .header-title{
+        font-size: 40px;
+        line-height: 100%;
+    }
+    .header-title span{
+        font-size: 40px;
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .block-title{
+        font-size: 100%;
+    }
+    .name-title-wrap{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .attention-text{
+        font-size: 66%;
+    }
+    .attention-container{
+        align-items: center;
+    }
+}
 
 
